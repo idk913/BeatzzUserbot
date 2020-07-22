@@ -10,7 +10,7 @@ pm_caption += "**SYSTEM STATUS**\n"
 pm_caption += "`TELETHON VERSION:` **6.0.9**\n`Python:` **3.8.5**\n"
 pm_caption += "`DATABASE STATUS:` **Functional**\n"
 pm_caption += "**Current Branch** : `master`\n"
-pm_caption += "**USERBOT DEV** : `@BeatsToHell913`\n"
+pm_caption += "**USERBOT DEV** : {@BeatsToHell913}\n"
 pm_caption += f"**My Boss** : {DEFAULTUSER} \n"
 pm_caption += "**Heroku Database** : `AWS - Working Properly`\n\n"
 #@command(outgoing=True, pattern="^.alive$")
