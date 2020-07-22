@@ -1,27 +1,26 @@
 # BEATZZ
 
 <p align="center">
-<img src="beatzz.png" alt="BEATZZ USERBOT">
+<alt="BEATZZ USERBOT">
 
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 
 
-Best User Bot To Manage Your Telegram Account 
+Best User Bot To Manage Your Telegram Account, Forked from FRIDAY [StarkGang]
 ## Most PowerFul And Better And Secure
 
 
 ## HOW TO DEPLOY 
 
-I THANK INFOTEL FOR THIER FREE VIDEO SERVICE WATCH VIDEO ON HOW TO DEPLOY 
 
 <a href="https://youtu.be/xfHcm_e92eQ"><img src="https://img.shields.io/badge/How%20To-Deploy-red.svg?logo=Youtube"></a>
 
 ## Installing Heroku 
 
 ### The Easy Way
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/StarkGang/fridayuserbot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/idk913/beatzzuserbot)
 
 ## GET STRING SESSION FROM REPL RUN 
 
