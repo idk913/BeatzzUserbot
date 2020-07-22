@@ -36,7 +36,7 @@ async def _(event):
             "👁👁\n  💋  =====> Apne baap ko mat sikha",
             "👁👁\n  👄  =====> Nikal,",
             "👁👁\n  👅  =====> Pehli fursat mei nikal",    
-            "👁👁\n  💋  =====> @BeatsToHell913's BOT is the best bot ever!"
+            "👁👁\n  💋  =====> Subscribe to BeatsToHell on YouTube now!"
         ]
 
     for i in animation_ttl:
