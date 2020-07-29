@@ -88,7 +88,7 @@ async def reedme(e):
 async def _(event):
 	if event.fwd_from:
 		return
-	deq = deque(list("❤️🧡💛💚💙💜🖤"))
+	deq = deque(list("You are an idiot"))
 	for _ in range(32):
 		await asyncio.sleep(0.1)
 		await event.edit("".join(deq))
