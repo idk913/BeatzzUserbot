@@ -1,7 +1,3 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.c (the "License");
-# you may not use this file except in compliance with the License.
 """
 Userbot module to help you manage a group
 """
@@ -31,12 +27,12 @@ PP_TOO_SMOL = "`The image is too small`"
 PP_ERROR = "`Failure while processing the image`"
 NO_ADMIN = "`I am not an admin nub nibba!`"
 NO_PERM = "`I don't have sufficient permissions! This is so sed. Alexa play Tera Baap Aaya`"
-NO_SQL = "`Running on Non-SQL mode!`"
+NO_SQL = "`Running on Non-SQL mode For Now!`"
 
 CHAT_PP_CHANGED = "`Chat Picture Changed`"
 CHAT_PP_ERROR = "`Some issue with updating the pic,`" \
-                "`maybe coz I'm not an admin,`" \
-                "`or don't have enough rights.`"
+                "`May Be because I'm not an admin,`" \
+                "`Or May Be I don't have enough rights.`"
 INVALID_MEDIA = "`Invalid Extension`"
 
 BANNED_RIGHTS = ChatBannedRights(
@@ -130,10 +126,10 @@ async def promote(promt):
                                  delete_messages=True,
                                  pin_messages=True)
 
-    await promt.edit("`Promoting...`")
+    await promt.edit("`One Min Making This Guy Admin......`")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "MemeMaster"  # Just in case.
+        rank = "Mememaster"  # Just in case.
     if user:
         pass
     else:
@@ -143,7 +139,7 @@ async def promote(promt):
     try:
         await promt.client(
             EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit("`Promoted Successfully! Now gib Party 🥳`")
+        await promt.edit("`Promoted Successfully! Now You Are Meme Master.....`")
 
     # If Telethon spit BadRequestError, assume
     # we don't have Promote permission
@@ -175,7 +171,7 @@ async def demote(dmod):
 
     # If passing, declare that we're going to demote
     await dmod.edit("`Demoting...`")
-    rank = "admeme"  # dummy rank, lol.
+    rank = "Mememaster"  # dummy rank, lol.
     user = await get_user_from_event(dmod)
     user = user[0]
     if user:
@@ -200,7 +196,7 @@ async def demote(dmod):
     except BadRequestError:
         await dmod.edit(NO_PERM)
         return
-    await dmod.edit("`Demoted this retard Successfully!`")
+    await dmod.edit("`Demoted this Noob Nibba Successfully!`")
 
     # Announce to the logging group if we have demoted successfully
     if BOTLOG:
@@ -232,7 +228,7 @@ async def ban(bon):
         return
 
     # Announce that we're going to whack the pest
-    await bon.edit("`Whacking the pest!`")
+    await bon.edit("`Blowing Dust Off Ban Hammer...`")
 
     try:
         await bon.client(EditBannedRequest(bon.chat_id, user.id,
@@ -255,7 +251,7 @@ async def ban(bon):
     if reason:
         await bon.edit(f"Loser `{str(user.id)}` was banned !!\nReason: {reason}")
     else:
-        await bon.edit(f"Bitch `{str(user.id)}` was banned !!")
+        await bon.edit(f"This Noob `{str(user.id)}` was banned !!")
     # Announce to the logging group if we have banned the person
     # successfully!
     if BOTLOG:
@@ -293,7 +289,7 @@ async def nothanos(unbon):
     try:
         await unbon.client(
             EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
-        await unbon.edit("```Unbanned Successfully. Granting another chance.```")
+        await unbon.edit("```Unbanned Successfully. Giving another chance.```")
 
         if BOTLOG:
             await unbon.client.send_message(
@@ -342,7 +338,7 @@ async def spider(spdr):
         return
 
     # If everything goes well, do announcing and mute
-    await spdr.edit("`Gets a tape!`")
+    await spdr.edit("`Here A Duct Tape`")
     if mute(spdr.chat_id, user.id) is False:
         return await spdr.edit('`Error! User probably already muted.`')
     else:
