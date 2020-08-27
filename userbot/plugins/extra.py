@@ -69,17 +69,6 @@ async def _(event):
 		deq.rotate(1)
 		
 
-@borg.on(admin_cmd("source$"))
-#@register(outgoing=True, pattern="^.source$")
-async def source(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://github.com/StarkGang/FridayUserbot")
-
-@borg.on(admin_cmd("readme$"))
-#@register(outgoing=True, pattern="^.readme$")
-async def reedme(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://github.com/StarkGang/FRIDAYUSERBOT/blob/master/README.md")
 
 
 
@@ -88,8 +77,7 @@ async def reedme(e):
 async def _(event):
 	if event.fwd_from:
 		return
-	await event.edit("Why would I send hearts? Fuck off, bitch!")
-	deq = deque(list("🖕🏻🖕🏼🖕🏽🖕🏾🖕🏿🖕"))
+	deq = deque(list("❤️🧡💛💚💙💜🖤"))
 	for _ in range(32):
 		await asyncio.sleep(0.1)
 		await event.edit("".join(deq))
@@ -126,12 +114,7 @@ CMD_HELP.update({
 CMD_HELP.update({
     "clock": "Bot will send a cool clock animation."
 })
-CMD_HELP.update({
-    "readme": "Reedme."
-})
-CMD_HELP.update({
-    "source": "Gives the source of your userbot"
-})
+
 CMD_HELP.update({
     "myusernames": "List of Usernames owned by you."
 })
