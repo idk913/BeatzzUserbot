@@ -9,7 +9,7 @@ METOOSTR = [
     "`Me irl`",
     "`Same here`",
     "`Haha yes`",
-    "`Same pinch bsdk`",
+    "`Same pinch!`",
 ]
 RUNSREACTS = [
     "`Runs to Thanos`",
@@ -34,9 +34,14 @@ RAPE_STRINGS = [
 ABUSE_STRINGS = [
        "`Madharchod`",
 	   "`Gaandu`",
+	   "`How the fuck am I supposed to reply to your dry ass text message?`",
+	   "`Bitch, lemme show you the exit.`",
+	   "`Jaa na Bhenchod`",
+	   "`And the conclusion is, you're a fucking cunt!`",
+	   "`If mothafakas like you were born in Mars, Elon had to give up his dream.`",
 	   "`Chutiya he rah jaye ga`",
 	   "`Ja be Gaandu`",
-	   "`Ma ka Bhodsa madharchod`",
+	   "`Ma ka Bhosda madharchod`",
 	   "`mml`",
 	   "`You MotherFukcer`",
 	   "`Muh Me Lega Bhosdike ?`"
