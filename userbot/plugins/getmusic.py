@@ -13,7 +13,7 @@ async def _(event):
         return
     name = event.pattern_match.group(1)
     chat = "@SpotifyMusicDownloaderBot"
-    await event.edit("```Getting Your Music```")
+    await event.edit("```B.E.A.T.Z.Z is Getting Your Music```")
     async with bot.conversation(chat) as conv:
           await asyncio.sleep(2)
           await event.edit("`Downloading Music \nIt may take some time\n   So Stay Tuned.....`")
