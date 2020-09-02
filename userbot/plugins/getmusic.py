@@ -19,10 +19,13 @@ async def _(event):
           await event.edit("`B.E.A.T.Z.Z is Downloading Music \nIt may take some time\n   So Stay Tuned.....`")
           try:
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=595898211))
+              response2 = conv.wait_event(events.NewMessage(incoming=True,from_users=595898211))
               await bot.send_message(chat, name)
               respond = await response
+              respond2 = await response2
           except YouBlockedUserError:
               await event.reply("```Please unblock @DeezerMusicBot and try again```")
               return
           await event.delete()
           await bot.forward_messages(event.chat_id, respond.message)
+          await bot.forward_messages(event.chat_id, respond2.message)
